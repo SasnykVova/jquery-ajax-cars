@@ -11,24 +11,66 @@
 <body>
     <div class="wrapper">
         <main class="main">
-            <div class="autoBlock"> 
+            <div class="autoBlock">
+                <div class="model-summary">
+                    <div class="model-name">Hyundai Elantra</div>
+                    <div id="model-specs" class="model-specs"></div>
+                    <div id="model-price" class="model-price"></div>
+                    <div id="model-priceUSD" class="model-price"></div>
+                    <div class="btn">Замовити</div>
+                </div> 
                 <div id="imgHolder" class="imgHolder">
                     <img src="./assets/img/blue.png" alt="auto">
                 </div>
             </div>
-            <div id="colorsSelector" class="colorsSelector">
-                <div class="colorItem colorBlue" data-img-path="./assets/img/blue.png"></div>
-                <div class="colorItem colorGrey" data-img-path="./assets/img/grey.png"></div>
-                <div class="colorItem colorRed" data-img-path="./assets/img/red.png"></div>
-            </div>
-            <nav id="menu" class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">Home</li>
-                    <li class="menu__item">About</li>
-                    <li class="menu__item">Services</li>
-                    <li class="menu__item">Contact</li>
-                </ul>
-            </nav>
+            <form id="autoForm">
+                <h2>Вибири комплектацію</h2>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <h4>Двигун</h4>
+                        <div class="form-block">
+                            <input type="radio" name="engine" id="engine1400" value="624900" checked>
+                            <label for="engine1400">1.4 л (100 л.с.)</label>
+                        </div>
+                        <div class="form-block">
+                            <input type="radio" name="engine" id="engine1600" value="749900" >
+                            <label for="engine1600">1.6 л (123 л.с.)</label>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <h4>Коробка передач</h4>
+                        <div class="form-block">
+                            <input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+                            <label for="transmission6MT">Ручна, 6 ступенів (6 MT)</label>
+                        </div>
+                        <div class="form-block">
+                            <input type="radio" name="transmission" id="transmission6AT" value="125000" >
+                            <label for="transmission6AT">Атомат, 6 ступенів (6 AT)</label>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <h4>Комплектація (дадаткові опції)</h4>
+                        <div class="form-block">
+                            <input type="radio" name="package" id="packageActive" value="0" checked>
+                            <label for="packageActive">Active</label>
+                        </div>
+                        <div class="form-block">
+                            <input type="radio" name="package" id="packageActivePlus" value="85000">
+                            <label for="packageActivePlus">Active Plus (кондиціонер)</label>
+                        </div>
+                        <div class="form-block">
+                            <input type="radio" name="package" id="packageComfort" value="130000">
+                            <label for="packageComfort">Comfort (кліматконтроль)</label>
+                        </div>
+                    </div>
+                </div>
+                <h4>Виберіть колір</h4>
+                <div id="colorsSelector" class="colorsSelector">
+                    <div class="colorItem colorBlue" data-img-path="./assets/img/blue.png"></div>
+                    <div class="colorItem colorGrey" data-img-path="./assets/img/grey.png"></div>
+                    <div class="colorItem colorRed" data-img-path="./assets/img/red.png"></div>
+                </div>
+            </form>
         </main>
     </div>
 
